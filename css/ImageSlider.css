@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+  background-color: #0d3544;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+header h1{
+  color: #0d3544 ;
+  background-color: white;
+  padding: 15px 50px;
+  border-radius: 7px;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  position: relative;
+  width: 70%;
+  height: 500px;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px rgb(203, 227, 235);
+}
+
+.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+
+.slides img {
+  width: 33.333%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.controls button:hover {
+  color: gray;
+}
